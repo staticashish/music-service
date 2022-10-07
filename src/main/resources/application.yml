@@ -1,0 +1,22 @@
+server:
+  port: 7070
+  
+music-service:
+  client:
+    music-brainz:
+      base-url: https://musicbrainz.org/ws/2
+    wikidata:
+      base-url: https://www.wikidata.org/wiki
+    wikipedia:
+      base-url: https://en.wikipedia.org/api/rest_v1
+    cover-art:
+      base-url: https://coverartarchive.org    
+  
+spring:
+  cache:
+    jcache:
+      config: classpath:ehCache.xml  
+
+springdoc:
+  api-docs:
+    path: /api-docs
