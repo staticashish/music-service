@@ -48,7 +48,7 @@ docker run -p <localport>:7070 music-service:latest
 
 You can access then endpoint once you start the application on browser by using this url:
 
-http://localhost:{local-port}/music-artist/<mbid-from-musicbrainz>
+http://localhost:{local-port}/music-artist/{mbid-from-musicbrainz}
 
 Sample mbids:
 - Sonu Nigam (Indian Singer) : 93622908-0806-4173-94c1-9e42597af011
