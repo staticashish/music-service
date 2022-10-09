@@ -10,18 +10,18 @@ import com.challenge.plugsurfing.exception.DataNotFoundException;
 import com.challenge.plugsurfing.exception.FatalException;
 
 @Component
-public class WikidataClientErrorHandler extends DefaultResponseErrorHandler {
+public class CoverArtClientErrorHandler extends DefaultResponseErrorHandler {
 
   @Override
   protected void handleError(ClientHttpResponse response, HttpStatus statusCode) throws IOException {
+
     switch (statusCode) {
       case NOT_FOUND:
-        throw new DataNotFoundException(statusCode + " " + response.getStatusText() + " Exception occurs while fetching Wikidata data");
+        throw new DataNotFoundException(statusCode + "!!! Exception occurs while fetching CoverArt data");
       case BAD_REQUEST:
-        throw new BadRequestException(
-            statusCode + " " + response.getStatusText() + " Exception occurs while fetching Wikidata data: Invalid wikiid.");
+        throw new BadRequestException(statusCode + "!!! Exception occurs while fetching CoverArt data: Invalid id.");
       default:
-        throw new FatalException(statusCode + " " + response.getStatusText() + " Exception occurs while fetching Wikidata data");
+        throw new FatalException(statusCode + "!!! " + "Exception occurs while fetching CoverArt data");
     }
   }
 }
