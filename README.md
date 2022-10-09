@@ -1,6 +1,6 @@
 # music-service
 
-This is the microservice to get the Music Artist information about their wikipedia description along with album list that artist has released.
+This is the microservice to get the Music Artist information from wikipedia along with the list of albums that artist has released.
 
 Simple UML(component diagram) for application:
 
@@ -22,7 +22,7 @@ For building and running the application you need:
 
 ## Running the application locally
 
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `de.codecentric.springbootsample.Application` class from your IDE.
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.challenge.plugsurfing.MusicServiceApplication` class from your IDE.
 
 Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
 
