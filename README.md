@@ -50,6 +50,10 @@ You can access then endpoint once you start the application on browser by using 
 
 http://localhost:{local-port}/music-artist/<mbid-from-musicbrainz>
 
+Sample mbids:
+Sonu Nigam (Indian Singer) : 93622908-0806-4173-94c1-9e42597af011
+Eminem (American Rapper) : b95ce3ff-3d05-4e87-9e01-c97b66af13d4
+
 Open API specification can be accessed via below url:
 
 http://localhost:{local-port}/swagger-ui/index.html
